@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-navy: #0B3558;
+    --color-navy-deep: #082A46;
+    --color-teal: #0D9488;
+    --color-teal-bright: #14B8A6;
+    --color-white: #FFFFFF;
+    --color-teal-light: #EAF7F6;
+    --color-blue-light: #EEF4F8;
+    --color-text-main: #183247;
+    --color-text-secondary: #607887;
+    --color-border: #D8E5EA;
+    --color-danger: #B42318;
+    --color-warning: #B54708;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--color-blue-light);
+    color: var(--color-text-main);
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Custom utility classes matching Secura design system */
+.bg-navy-primary { background-color: #0B3558; }
+.bg-navy-deep { background-color: #082A46; }
+.bg-teal-primary { background-color: #0D9488; }
+.bg-teal-bright { background-color: #14B8A6; }
+.bg-teal-light { background-color: #EAF7F6; }
+.bg-blue-light { background-color: #EEF4F8; }
+
+.text-navy-primary { color: #0B3558; }
+.text-navy-deep { color: #082A46; }
+.text-teal-primary { color: #0D9488; }
+.text-teal-bright { color: #14B8A6; }
+.text-main { color: #183247; }
+.text-secondary { color: #607887; }
+.text-danger { color: #B42318; }
+.text-warning { color: #B54708; }
+
+.border-secura { border-color: #D8E5EA; }
+.border-teal-primary { border-color: #0D9488; }
+.border-danger { border-color: #B42318; }
+
+/* Safe padding for mobile bottom bar */
+.pb-safe-nav {
+  padding-bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
+}

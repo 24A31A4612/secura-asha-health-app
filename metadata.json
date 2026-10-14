@@ -1,0 +1,6 @@
+{
+  "name": "Secura — Smarter Support for ASHA Workers",
+  "description": "Frontline health worker support application providing protocol-based clinical guidance, household registers, danger sign escalation, and offline access.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
